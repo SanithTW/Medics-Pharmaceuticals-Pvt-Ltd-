@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Now - Medics Pharmaceuticals</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Background Elements -->
+  <div class="ambient-bg">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar glass-effect">
+    <div class="logo">
+      <a href="index.html"
+        style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 12px;">
+        <img src="../images/logo_full.png" alt="Medics Pharmaceuticals Logo" class="nav-logo-img">
+      </a>
+    </div>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="order.html" class="nav-link active">Order</a></li>
+      </ul>
+    </div>
+    <div class="nav-actions">
+      <!-- <button class="theme-toggle"><i class="fa-solid fa-moon"></i></button> -->
+      <button class="btn-primary"
+        onclick="window.location.href='https://wa.me/94770456514?text=Hello%20Medics%20Pharmaceuticals%2C%20I%20have%20an%20inquiry.'">Contact
+        Us</button>
+    </div>
+    <div class="mobile-menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Order Section -->
+  <section class="section"
+    style="padding-top: 150px; min-height: 80vh; display: flex; flex-direction: column; align-items: center;">
+    <div class="section-header">
+      <h2>How to <span class="gradient-text">Place an Order</span></h2>
+      <p>Simple steps to get your medicines delivered to your doorstep.</p>
+    </div>
+
+    <div class="steps-container"
+      style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; margin-bottom: 4rem; width: 100%;">
+
+      <!-- Step 1 -->
+      <div class="product-card tilt-card" style="flex: 1; min-width: 280px; max-width: 350px;">
+        <div class="card-bg bg-blue"></div>
+        <div class="card-content" style="text-align: center;">
+          <div class="p-icon" style="margin: 0 auto 1.5rem auto;"><i class="fa-solid fa-list-check"></i></div>
+          <h3>Step 1</h3>
+          <p>Review your prescription or list the items you need to purchase.</p>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="product-card tilt-card" style="flex: 1; min-width: 280px; max-width: 350px;">
+        <div class="card-bg bg-purple"></div>
+        <div class="card-content" style="text-align: center;">
+          <div class="p-icon" style="margin: 0 auto 1.5rem auto;"><i class="fa-brands fa-whatsapp"></i></div>
+          <h3>Step 2</h3>
+          <p>Click the "Order via WhatsApp" button below to open a chat with us.</p>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="product-card tilt-card" style="flex: 1; min-width: 280px; max-width: 350px;">
+        <div class="card-bg bg-green"></div>
+        <div class="card-content" style="text-align: center;">
+          <div class="p-icon" style="margin: 0 auto 1.5rem auto;"><i class="fa-solid fa-truck-fast"></i></div>
+          <h3>Step 3</h3>
+          <p>Send your list/prescription. We will confirm the total and delivery details.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- WhatsApp Button -->
+    <div class="cta-container"
+      style="max-width: 800px; background: linear-gradient(135deg, rgba(37, 211, 102, 0.1), rgba(37, 211, 102, 0.05)); border-color: rgba(37, 211, 102, 0.3);">
+      <h2 style="margin-bottom: 0.5rem;">Ready to Order?</h2>
+      <p style="margin-bottom: 2rem; color: var(--text-muted);">Chat directly with our pharmacist on WhatsApp.</p>
+
+      <a href="https://wa.me/94770456514?text=Hello%20Medics%20Pharmaceuticals%2C%20I%20would%20like%20to%20place%20an%20order."
+        target="_blank" style="text-decoration: none;">
+        <button class="btn-lg"
+          style="background: #25D366; color: white; border: none; box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4); margin: 0 auto;">
+          <i class="fa-brands fa-whatsapp" style="font-size: 1.4rem;"></i>
+          <span>Order via WhatsApp (+94 77 045 6514)</span>
+        </button>
+      </a>
+    </div>
+
+  </section>
+
+  <footer class="main-footer">
+    <div class="footer-content">
+      <div class="footer-logo">MEDICS PHARMACEUTICALS</div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="order.html">Order</a>
+      </div>
+      <div class="social-icons">
+        <a href="https://web.facebook.com/medicscolombo"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Medics Pharmaceuticals (Pvt) Ltd. All rights reserved. <br> Since 1985</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+  <script>
+    if (typeof VanillaTilt !== 'undefined') {
+      VanillaTilt.init(document.querySelectorAll(".tilt-card"), {
+        max: 10,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.2
+      });
+    }
+  </script>
+</body>
+
+</html>

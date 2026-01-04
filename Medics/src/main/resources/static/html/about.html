@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Medics Pharmaceuticals</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Background Elements -->
+  <div class="ambient-bg">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar glass-effect">
+    <div class="logo">
+      <a href="index.html"
+        style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 12px;">
+        <img src="../images/logo_full.png" alt="Medics Pharmaceuticals Logo" class="nav-logo-img">
+      </a>
+    </div>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link active">About Us</a></li>
+        <li><a href="order.html" class="nav-link">Order</a></li>
+      </ul>
+    </div>
+    <button class="btn-primary"
+      onclick="window.location.href='https://wa.me/94770456514?text=Hello%20Medics%20Pharmaceuticals%2C%20I%20have%20an%20inquiry.'">Contact
+      Us</button>
+    </div>
+    <div class="mobile-menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- About Main Section -->
+  <section class="section" style="padding-top: 150px;">
+    <div class="section-header">
+      <h2>About <span class="gradient-text">Medics Pharmaceuticals</span></h2>
+      <p>Pioneering Healthcare Solutions Since 1985</p>
+    </div>
+
+    <div style="display: flex; gap: 4rem; align-items: center; margin-bottom: 6rem; flex-wrap: wrap;">
+      <div style="flex: 1; min-width: 300px;">
+        <h3 style="font-size: 2.5rem; margin-bottom: 1.5rem; line-height: 1.2;">Decades of <br><span
+            class="highlight">Trust & Excellence</span></h3>
+        <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 2rem;">
+          Medics Pharmaceuticals (Pvt) Ltd has been at the forefront of the pharmaceutical industry, committed
+          to delivering high-quality healthcare products that improve lives.
+          Founded in 1985, our journey began with a simple mission: to make quality healthcare accessible to
+          all.
+        </p>
+        <p style="color: var(--text-muted); font-size: 1.1rem;">
+          Today, we stand as a beacon of trust, known for our rigorous quality standards and innovative
+          approach to medicine.
+          Our state-of-the-art facilities and dedicated research teams ensure that every product we release
+          meets global safety and efficacy benchmarks.
+        </p>
+      </div>
+      <div style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
+        <div class="product-card tilt-card"
+          style="width: 100%; max-width: 500px; text-align: center; border-color: var(--primary);">
+          <div class="card-bg bg-green"></div>
+          <div class="card-content">
+            <i class="fa-solid fa-flask-vial"
+              style="font-size: 4rem; color: var(--primary); margin-bottom: 1.5rem;"></i>
+            <h3>Innovation First</h3>
+            <p>We continuously invest in R&D to bring cutting-edge solutions to the market.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vision & Mission -->
+    <div class="products-grid">
+      <div class="product-card tilt-card">
+        <div class="card-bg bg-blue"></div>
+        <div class="card-content">
+          <div class="p-icon"><i class="fa-solid fa-eye"></i></div>
+          <h3>Our Vision</h3>
+          <p>To be the most trusted and admired pharmaceutical company, recognized for our commitment to
+            quality and ethical practices.</p>
+        </div>
+      </div>
+
+      <div class="product-card tilt-card">
+        <div class="card-bg bg-purple"></div>
+        <div class="card-content">
+          <div class="p-icon"><i class="fa-solid fa-bullseye"></i></div>
+          <h3>Our Mission</h3>
+          <p>To provide high-quality, affordable medicines while adhering to the highest standards of safety
+            and sustainability.</p>
+        </div>
+      </div>
+
+      <div class="product-card tilt-card">
+        <div class="card-bg bg-green"></div>
+        <div class="card-content">
+          <div class="p-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+          <h3>Our Values</h3>
+          <p>Integrity, Innovation, and Care are the pillars that support every decision we make at Medics
+            Pharmaceuticals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="footer-content">
+      <div class="footer-logo">MEDICS PHARMACEUTICALS</div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="order.html">Order</a>
+      </div>
+      <div class="social-icons">
+        <a href="https://web.facebook.com/medicscolombo"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script>
+      if (typeof VanillaTilt !== 'undefined') {
+        VanillaTilt.init(document.querySelectorAll(".tilt-card"), {
+          max: 10,
+          speed: 400,
+          glare: true,
+          "max-glare": 0.2
+        });
+      }
+    </script>
+</body>
+
+</html>
